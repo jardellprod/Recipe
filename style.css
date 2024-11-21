@@ -1,0 +1,69 @@
+
+@font-face {
+    font-family: "Young Serif";
+    src: url(fonts/young-serif/YoungSerif-Regular.ttf);
+}
+@font-face {
+    font-family: "Outfit" ;
+    src: url(fonts/outfit/Outfit-VariableFont_wght.ttf);
+}
+*{
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; 
+    min-height: 100vh;
+    background-color: hsl(30, 54%, 90%);
+}
+
+.recipe {
+    max-width: 480px;
+    min-width: 320px;
+    border-radius: 13px;
+    background-color: hsl(0, 0%, 100%);
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.hero-image {
+    width: 90%;
+    height: 180px;
+    align-self: center;
+    margin-top: 5%;
+}
+
+.hero-image img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+@media (max-width: 400px) {
+
+    .recipe{
+        flex-grow: 1;
+    }
+
+   .recipe,
+   .hero-image,
+   .hero-image img {
+    min-width: 100vw;
+    margin: 0;
+    border-radius: 0;
+   }
+
+   .hero-image img{
+    max-height: 50vmin;
+   }
+
+
+    
+}
