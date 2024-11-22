@@ -50,6 +50,32 @@ body {
     margin-bottom: 20px;
   }
 
+.recipe > :not(:first-child){
+    background-color: blueviolet;
+    width: 90%;
+    align-self: center;
+}
+
+h1, h2{
+    font-family: "Young Serif", "serif";
+    margin-bottom: 10px;
+}
+
+h3{
+    font-family: "Outfit", "serif";
+    margin-bottom: 10px;
+}
+
+.recipe-info h1{
+    font-size: 1.5rem;
+}
+
+.recipe-info p{
+    line-height: 1.4;
+    font-size: 0.7rem;
+}
+
+
 @media (max-width: 600px) {
 
     .recipe{
@@ -67,6 +93,10 @@ body {
    .hero-image  {
     max-height: 50vmin;
     margin-bottom: 20px;
+   }
+
+   .recipe-info p{
+    display: inline;
    }
 
     
