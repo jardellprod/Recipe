@@ -45,7 +45,11 @@ This is a solution to the [Recipe page challenge on Frontend Mentor](https://www
 ### What I learned
 
 In the original design shared, there was a gap at the top and at the bottom of the recipe container, also it looked as thought the recipe was centered in the middle of the page. I wanted to do something similar, but ran into an issue when using flex or grid. Essentially
-because the contant was larger than the height of my current viewport I was not able to easily include a margin-top or bottom, so the viewport had to be very large for the content to be centered. This happened because I set height as 100vh when using grid or flexbox. To fix the issue I had to set min-height instead of height, this allowed the content to grow, and it also gave me flexibility to add a bottom and top margin if the content was too long.
+I ran into an issue with adding a gap at the top and bottom of the page. when I center the content using flex or grid it will automatically add a gap at the top and bottom if there is space. However b/c the content is long I had to make sure based on a certain height add a gap automatically, and still allow the content to take more space than what is made available by the parent.
+
+I also had an issue with adding space between the marker and content in the li element. I essentially had to hide the marker, use another notation to get the bullet points or numbers as an additional item in the flex li container. This gave me more styling flexibility.
+
+Honestly i don't know what my life would be like without Grid or flex.
 
 ```css
 body {
